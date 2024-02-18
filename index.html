@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>magox.xyz</title>
+    <meta content="magox.xyz" property="og:title">
+    <link rel="icon" type="image/gif" href="images/christianity.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="magox">
+    <meta property="og:url" content="magox.xyz">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/BlockInspect.js"></script>
+    <style>
+        .unselectable {
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+      
+      .bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px); 
+}
+    </style>
+    <script async src="js/main.js"></script>
+</head>
+<body>
+    <main>
+        <script>
+            function audioPlay() {
+                var audio = document.getElementById("audio");
+                audio.volume = 1.0;
+                audio.play();
+            }
+
+        </script>
+        <input type="checkbox" autocomplete="off" id="overlay-toggle">
+        <div class="overlay fullscreen">
+<label for="overlay-toggle" onclick="audioPlay()">
+    <span class="no-hover" style="font-family: mono; font-size: 0.6em;">tap to enter</span>
+    <span class="hover" style="font-family: mono; font-size: 0.6em;">click to enter</span>
+</label>
+
+        </div>
+        <audio loop="" preload="auto" id="audio">
+            <source src="media/sound.webm" type="audio/webm">
+        </audio>
+
+<img class="fullscreen bg-image" src="media/pics.jpg" alt="Background Image">
+
+        <section class="fullscreen text-content">
+            <h1 class="unselectable" style="font-family: derk; text-shadow: 0 0 0.40em #bababa;">magox</h1>
+            <div class="socials">
+                <a href="https://t.me/magoxtk" class="unselectable" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">tg</a>
+                <a href="https://instagram.com/magoxtk" class="unselectable" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">instagram</a>
+                <a href="https://discord.com/users/1058656992685740032" class="unselectable" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">dc</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
