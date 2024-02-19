@@ -29,46 +29,37 @@
 }
     </style>
     <script async src="js/main.js"></script>
-    <script>
-        function audioPlay() {
-            var audio = document.getElementById("audio");
-            audio.volume = 1.0;
-            audio.play();
-        }
-
-        function copyToClipboard() {
-            var textToCopy = "magoxtk.";
-            navigator.clipboard.writeText(textToCopy).then(function() {
-                // On successful copy
-                alert("Text copied: " + textToCopy);
-            }, function() {
-                // On error
-                alert("Failed to copy text!");
-            });
-        }
-    </script>
 </head>
 <body>
     <main>
+        <script>
+            function audioPlay() {
+                var audio = document.getElementById("audio");
+                audio.volume = 1.0;
+                audio.play();
+            }
+
+        </script>
         <input type="checkbox" autocomplete="off" id="overlay-toggle">
         <div class="overlay fullscreen">
-            <label for="overlay-toggle" onclick="audioPlay()">
-                <span class="no-hover" style="font-family: mono; font-size: 0.6em;">tap to enter</span>
-                <span class="hover" style="font-family: mono; font-size: 0.6em;">click to enter</span>
-            </label>
+<label for="overlay-toggle" onclick="audioPlay()">
+    <span class="no-hover" style="font-family: mono; font-size: 0.6em;">tap to enter</span>
+    <span class="hover" style="font-family: mono; font-size: 0.6em;">click to enter</span>
+</label>
+
         </div>
         <audio loop="" preload="auto" id="audio">
             <source src="media/sound.webm" type="audio/webm">
         </audio>
 
-        <img class="fullscreen bg-image" src="media/pics.jpg" alt="Background Image">
+<img class="fullscreen bg-image" src="media/pics.jpg" alt="Background Image">
 
         <section class="fullscreen text-content">
             <h1 class="unselectable" style="font-family: derk; text-shadow: 0 0 0.40em #bababa;">magox</h1>
             <div class="socials">
                 <a href="https://t.me/magoxtk" class="unselectable" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">tg</a>
                 <a href="https://instagram.com/magoxtk" class="unselectable" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">instagram</a>
-                <a href="javascript:void(0);" onclick="copyToClipboard()" class="unselectable" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">dc</a>
+                <a href="https://www.tiktok.com/@magoxtk" class="unselectable" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">tt</a>
             </div>
         </section>
     </main>
