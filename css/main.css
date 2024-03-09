@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    background: #181a1b !important,
+    background: #111111,
 }
 
 #overlay-toggle {
@@ -39,7 +39,7 @@ body {
 
 .overlay {
     z-index: 1;
-    background-color: #181a1b !important
+    background-color: #111111
 }
 
 .overlay label {
