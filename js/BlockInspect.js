@@ -1,8 +1,4 @@
-/**
- * @author san randry
- * @license MIT license
- * this plugin disable all inspect element feature on a web browser
- */
+
 // disable right click
 document.oncontextmenu = function (e) {
     e.preventDefault()
